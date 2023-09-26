@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* Introduction */
+
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: url(Images/Spices_1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: right;
+}
+
+.text-box h1{
+    font-size: 70px;
+    color: rgb(255, 204, 29);
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 10px;
+    color: rgb(232, 232, 204);
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+}
+
+
+/*--Images Slider--*/
+
+.imagesSlider{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.slideshow-container {
+  max-width: 780px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "prev button" to the left */
+.prev{
+    left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*--Company Introduction with Image and Videos--*/
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 30px 0 30px;
+}
+
+.introduction h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: rgb(11, 70, 25);
+}
+
+.introduction h2 span{
+    font-weight: 100;
+}
+
+.introduction p {
+    font-size: 25px;
+}
+
+.introduction .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.introduction .box .about{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.introduction .box .about img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.introduction .box .about .video-container{
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for the video container */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.introduction .box .about .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--Products--*/
+
+.products{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: rgb(11, 70, 25);
+}
+
+.products .container{
+    margin-top: 20px;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 16px;
+    color: #ff5722;
+}
+
+
+/*--Footer--*/
+
+footer {
+    background-color: rgb(232, 232, 204);
+    color: rgb(17, 101, 48);
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 200px;
+    height: 200px;
+}
+
+footer p {
+    font-size: 16px;
+    text-align: left;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #116530;
+    text-decoration: none;
+    font-size: 24px;
+}
